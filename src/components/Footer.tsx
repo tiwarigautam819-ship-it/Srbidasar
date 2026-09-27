@@ -104,9 +104,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdminLogin }) => {
           <p className="text-center sm:text-left font-medium">
             {settings.footerText || '© 2026 Gautam Tiwari from Nexora. All Rights Reserved.'}
           </p>
-          <div className="flex items-center gap-1 text-[11px] text-slate-400">
-            <span>Powered by Firebase & Google AI Studio</span>
-          </div>
         </div>
       </div>
     </footer>
