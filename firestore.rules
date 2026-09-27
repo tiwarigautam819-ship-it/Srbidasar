@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global settings: readable by all, writable
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+
+    // Videos: readable by all, writable
+    match /videos/{videoId} {
+      allow read, write: if true;
+    }
+
+    // Ratings: readable by all, public can create ratings (1 to 5)
+    match /ratings/{ratingId} {
+      allow read, write: if true;
+    }
+
+    // Comments: readable by all, public can comment
+    match /comments/{commentId} {
+      allow read, write: if true;
+    }
+
+    // Suggestions: readable and writable
+    match /suggestions/{suggestionId} {
+      allow read, write: if true;
+    }
+
+    // Links: readable and writable
+    match /links/{linkId} {
+      allow read, write: if true;
+    }
+
+    // Admins metadata
+    match /admins/{adminId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SR Bidasar",
+  "description": "Official music and remix video platform for SR Bidasar, featuring remix suggestions, ratings, comments, and community links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
